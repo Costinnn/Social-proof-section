@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.top-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.title-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    line-height: 2rem;
+}
+
+.main-text{
+    text-align: center;
+    font-size: 18px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.review-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.star{
+    margin: 0 3.5px;
+}
+
+.review-text{
+    color: hsl(300, 43%, 22%);
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+    background-image: url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+}
+.first-box,
+.second-box,
+.third-box{
+    background-color: hsl(300, 43%, 22%);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 40px 40px;
+}
+
+.name-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+.name{
+    color: hsl(0, 0%, 100%);
+    margin: 0 0;
+    font-weight: 500;
+}
+
+.status{
+    color: hsl(333, 80%, 67%);
+    margin: 0 0;
+    font-weight: 400;
+}
+
+.review{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+@media (min-width:600px){
+    .review-box{
+        flex-direction: row;
+        gap: 25px;
+        justify-content: flex-start;
+        
+    }
+
+    .star{
+        margin-top: 5px;
+    }
+
+    .first{
+        margin-right: 70px;
+    }
+
+    .second{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .third{
+        margin-left: 70px;
+    }
+}
+
+@media (min-width:1130px){
+    .top-container{
+        flex-direction: row;
+        margin-top: 7vh;
+        background-image: url(./images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .title-container{
+        width: 500px;
+    }
+
+    .main-title{
+        text-align: left;
+        padding-right: 200px;
+        padding-left: 0;
+    }
+
+    .main-text{
+        text-align: left;
+        padding-right: 50px;
+        padding-left: 0;
+    }
+
+    .bottom-container{
+        flex-direction: row;
+        gap: 30px;
+        background-image: url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+    }
+
+    .first-box,
+    .second-box,
+    .third-box{
+        width: 340px;
+        padding: 40px 30px;
+    }
+
+    .review{
+        margin-top: 25px;
+    }
+    
+    .first-box{
+        margin-bottom: 70px;
+    }
+    .second-box{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .third-box{
+        margin-top: 70px;
+    }
+}
